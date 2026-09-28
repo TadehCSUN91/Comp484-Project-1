@@ -1,7 +1,7 @@
 # Comp484-Project-1# RackIt
 
 ## Github Link
-https://github.com/TadehCSUN91/Comp484-Project-1.git
+https://tadehcsun91.github.io/Comp484-Project-1/
 
 A static HTML/CSS website for COMP 484 Project 1. RackIt is a workout-tracking concept site with a home page, a sample 3-day routine, an exercise library, and a progress preview.
 
