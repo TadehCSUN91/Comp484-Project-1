@@ -1,0 +1,217 @@
+/* Reset & base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fafafa;
+    line-height: 1.5;
+}
+
+/* Header & nav */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 40px;
+    border-bottom: 3px solid #d90429;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #d90429;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #d90429;
+}
+
+/* Main / hero section */
+main {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+main nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main nav a {
+    background-color: #d90429;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+main nav a:hover {
+    background-color: #111;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+/* Workouts page */
+main article {
+    margin-bottom: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+main article h2 {
+    border-bottom: 2px solid #d90429;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+}
+
+main article ul {
+    list-style: none;
+    text-align: center;
+}
+
+main article li {
+    margin-bottom: 8px;
+}
+/* Exercises page */
+main label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main input[type="text"] {
+    display: block;
+    margin: 0 auto 40px auto;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 300px;
+}
+
+main article {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+main article h2 {
+    border-bottom: 2px solid #d90429;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+}
+
+main article button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #d90429;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main article button:hover {
+    background-color: #111;
+}
+
+main article [popover] {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 400px;
+}
+/* Progress page */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 40px 0;
+}
+
+.stats article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: 4px solid #d90429;
+    border-radius: 8px;
+    padding: 24px;
+    min-width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.stats article:focus {
+    outline: 2px solid #d90429;
+}
+
+.stats p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.history {
+    list-style: none;
+    margin-top: 16px;
+}
+
+.history li {
+    margin-bottom: 8px;
+}

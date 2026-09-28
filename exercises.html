@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RackIt | Exercises</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/Rackit_logo.png" alt="RackIt logo" width="500" height="150">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workouts.html">Workouts</a></li>
+                    <li><a href="exercises.html">Exercises</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                </ul>    
+            </nav>            
+        </header> 
+        <main>
+            <h1>Exercise Library</h1>
+            <p>Search or browse common exercises used in RackIt routines.</p>
+
+            <!--
+                inputmode: a global attribute (not covered in lecture) that tells
+                mobile browsers which on-screen keyboard type to show for this input.
+                Used here on the search field since users are typing exercise names (text).
+                MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+            -->
+            <!--
+                datalist: an element (not covered in lecture) that provides a list of
+                pre-defined autocomplete options for an associated <input>. Linked here
+                via the input's "list" attribute to the datalist's id.
+                MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+            -->
+            <label for="exercise-search">Search exercises:</label>
+            <input type="text" id="exercise-search" name="exercise-search" list="exercise-options" inputmode="text" placeholder="e.g. Squat">
+            <datalist id="exercise-options">
+                <option value="Squat (Barbell)">
+                <option value="Bench Press (Barbell)">
+                <option value="Deadlift (Barbell)">
+                <option value="Overhead Press (Barbell)">
+                <option value="Bent Over Row (Barbell)">
+                <option value="Bulgarian Split Squat (Dumbbell)">
+                <option value="Pull Up">
+                <option value="Bicep Curl (Dumbbell)">
+                <option value="Lateral Raise (Dumbbell)">
+            </datalist>
+
+            <article>
+                <h2>Squat (Barbell)</h2>
+                <p>A compound lower-body exercise targeting the quads, glutes, and hamstrings.</p>
+
+                <!--
+                    popover: a global attribute (not covered in lecture) that lets a
+                    button toggle a floating panel on/off natively, with no JavaScript.
+                    The button's "popovertarget" must match the popover element's id.
+                    Used here to show extra form cues for the Squat without cluttering the page.
+                    MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/popover
+                -->
+                <button popovertarget="squat-info">Form Tips</button>
+                <div id="squat-info" popover>
+                    <p>Keep your chest up, knees tracking over your toes, and drive through your heels.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Bulgarian Split Squat (Dumbbell)</h2>
+                <p>A single-leg exercise that builds strength and balance in the quads and glutes.</p>
+
+                <!--
+                    wbr: an element (not covered in lecture) that marks a spot where the
+                    browser MAY break a long word/string if needed, without inserting a
+                    visible hyphen. Used here inside this long exercise name so it wraps
+                    cleanly on narrow screens instead of overflowing.
+                    MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
+                -->
+                <p>Also known as: Bulgarian<wbr>Split<wbr>Squat in some workout apps.</p>
+                <button popovertarget="bss-info">Form Tips</button>
+                <div id="bss-info" popover>
+                    <p>Keep most of your weight on your front leg and your torso upright throughout the movement.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Deadlift (Barbell)</h2>
+                <p>A full-body pulling movement that builds strength in the back, glutes, and hamstrings.</p>
+                <button popovertarget="deadlift-info">Form Tips</button>
+                <div id="deadlift-info" popover>
+                    <p>Keep the bar close to your shins, brace your core, and drive through your heels as you stand up.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Overhead Press (Barbell)</h2>
+                <p>A shoulder-focused pressing movement that also builds core and upper-back stability.</p>
+                <button popovertarget="ohp-info">Form Tips</button>
+                <div id="ohp-info" popover>
+                    <p>Brace your core, keep your ribs down, and press straight overhead without arching your lower back.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Bent Over Row (Barbell)</h2>
+                <p>A back exercise that targets the lats, rhomboids, and rear delts.</p>
+                <button popovertarget="row-info">Form Tips</button>
+                <div id="row-info" popover>
+                    <p>Hinge at the hips, keep your back flat, and pull the bar toward your lower ribs.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Pull Up</h2>
+                <p>A bodyweight pulling exercise that builds back and bicep strength.</p>
+                <button popovertarget="pullup-info">Form Tips</button>
+                <div id="pullup-info" popover>
+                    <p>Start from a full hang and pull until your chin clears the bar, avoiding excessive swinging.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Bicep Curl (Dumbbell)</h2>
+                <p>An isolation exercise targeting the biceps.</p>
+                <button popovertarget="curl-info">Form Tips</button>
+                <div id="curl-info" popover>
+                    <p>Keep your elbows pinned to your sides and avoid swinging the weight up with momentum.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Lateral Raise (Dumbbell)</h2>
+                <p>A shoulder isolation exercise that targets the medial deltoid.</p>
+                <button popovertarget="lateral-info">Form Tips</button>
+                <div id="lateral-info" popover>
+                    <p>Raise the dumbbells to shoulder height with a slight bend in the elbows, leading with your elbows.</p>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2026 RackIt. All rights reserved.</p>
+        </footer>               
+    </body>
+</html>

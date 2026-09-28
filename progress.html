@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RackIt | Progress</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/Rackit_logo.png" alt="RackIt logo" width="500" height="150">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workouts.html">Workouts</a></li>
+                    <li><a href="exercises.html">Exercises</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                </ul>    
+            </nav>            
+        </header> 
+        <main>
+            <h1>Your Progress</h1>
+            <p>A preview of the stats RackIt will track. The numbers below are sample data.</p>
+
+            <!--
+                data: an element (not covered in lecture) that links human-readable
+                content to a machine-readable value using its "value" attribute.
+                Used below to wrap each sample stat (weight, volume, workouts) so the
+                displayed text can have a clean numeric value behind it.
+                MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data
+            -->
+            <!--
+                tabindex: a global attribute (not covered in lecture) that controls
+                whether an element can receive keyboard focus. tabindex="0" adds each
+                stat card to the natural Tab order, so keyboard users can move through
+                the cards even though they are not links or buttons.
+                MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+            -->
+            <section class="stats">
+                <article tabindex="0">
+                    <h2>Bench Press PR</h2>
+                    <p><data value="225">225 lbs</data></p>
+                </article>
+
+                <article tabindex="0">
+                    <h2>Weekly Volume</h2>
+                    <p><data value="18400">18,400 lbs</data></p>
+                </article>
+
+                <article tabindex="0">
+                    <h2>Workouts This Month</h2>
+                    <p><data value="12">12 workouts</data></p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Recent Workouts</h2>
+                <ul class="history">
+                    <li>Day 1 — Sept 22</li>
+                    <li>Day 2 — Sept 24</li>
+                    <li>Day 3 — Sept 26</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 RackIt. All rights reserved.</p>
+        </footer>               
+    </body>
+</html>
